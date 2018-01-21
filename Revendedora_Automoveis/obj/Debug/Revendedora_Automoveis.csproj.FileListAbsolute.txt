@@ -1,0 +1,7 @@
+C:\Users\Alexandre\Desktop\Nelio C#\Revendedora_Automoveis\Revendedora_Automoveis\bin\Debug\Revendedora_Automoveis.exe.config
+C:\Users\Alexandre\Desktop\Nelio C#\Revendedora_Automoveis\Revendedora_Automoveis\bin\Debug\Revendedora_Automoveis.exe
+C:\Users\Alexandre\Desktop\Nelio C#\Revendedora_Automoveis\Revendedora_Automoveis\bin\Debug\Revendedora_Automoveis.pdb
+C:\Users\Alexandre\Desktop\Nelio C#\Revendedora_Automoveis\Revendedora_Automoveis\obj\Debug\Revendedora_Automoveis.csprojResolveAssemblyReference.cache
+C:\Users\Alexandre\Desktop\Nelio C#\Revendedora_Automoveis\Revendedora_Automoveis\obj\Debug\Revendedora_Automoveis.csproj.CoreCompileInputs.cache
+C:\Users\Alexandre\Desktop\Nelio C#\Revendedora_Automoveis\Revendedora_Automoveis\obj\Debug\Revendedora_Automoveis.exe
+C:\Users\Alexandre\Desktop\Nelio C#\Revendedora_Automoveis\Revendedora_Automoveis\obj\Debug\Revendedora_Automoveis.pdb
