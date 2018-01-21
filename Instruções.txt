@@ -1,0 +1,37 @@
+git init
+gitconfig--global user.name "Seu Nome" 
+gitconfig--global user.email"Seu Email"
+git status
+git add .
+git commit -m "MSG"
+git log
+git log --oneline
+
+Sair do editor Vim
+aperta tecla esc e coloca o comando :q! e tecla enter.
+
+Voltar um versão anterior
+git clean -df
+git checkout -- .
+
+desfazer um commit
+git reset --soft HEAD~1   //sem alteraração do projeto
+git reset --hard HEAD~1   //com alteraração do projeto
+
+olhar uma versão anterior
+git checkout <codigo do commit> 
+
+voltar para o ultimo commit
+git checkout <nome do branch>
+
+Associar repositorio local com remote
+git remote add origin https://github.com/Apdo3939/Projeto_Git.git
+
+Importar o projeto remoto para sua maquina
+git clone <url>
+
+Atualizar repositorios remoto
+git pursh
+
+Atualizando o seu repositório local
+git pull origin master
