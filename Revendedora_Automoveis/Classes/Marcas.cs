@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Collections.Generic;
 
 namespace Revendedora_Automoveis.Classes
 {
@@ -12,6 +8,7 @@ namespace Revendedora_Automoveis.Classes
         public int codigoMarca { get; set; }
         public string nomeMarca { get; set; }
         public string paisMarca { get; set; }
+        public List<Carros> carros { get; set; }
         
         //construtor
         public Marcas(int codigoMarca, string nomeMarca, string paisMarca)
@@ -19,19 +16,25 @@ namespace Revendedora_Automoveis.Classes
             this.codigoMarca = codigoMarca;
             this.nomeMarca = nomeMarca;
             this.paisMarca = paisMarca;
+            carros = new List<Carros>();
+        }
+
+        public void addCarro(Carros c)
+        {
+            carros.Add(c);
+            carros.Sort();
         }
 
         //Impresão da classe para o usuário
         public override string ToString()
         {
-            string s = "LISTAGEM DE MARCAS:\n";
-            s =  s + "\t" + codigoMarca + ", " + nomeMarca + ", País: " + paisMarca + ", Número de carros: ";
-            return s;
-        }
-        //metodo para contar carros de uma marca
-        public int ContaCarrosMarca()
-        {
-            return 0;
+            return codigoMarca
+                + ", "
+                + nomeMarca
+                + ", País: "
+                + paisMarca
+                + ", Números de Carros: "
+                + carros.Count;
         }
     }
-}
+}//OK Classe Pronta

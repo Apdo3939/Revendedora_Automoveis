@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Globalization;
 
 namespace Revendedora_Automoveis.Classes
 {
@@ -11,17 +7,22 @@ namespace Revendedora_Automoveis.Classes
         //atributos
         public string nomeAcessorio { get; set; }
         public double precoMarca { get; set; }
+        public Carros carro { get; set; }
 
         //construtor
-        public Acessorios()
+        public Acessorios(string nomeAcessorio, double precoMarca, Carros carro)
         {
-
+            this.nomeAcessorio = nomeAcessorio;
+            this.precoMarca = precoMarca;
+            this.carro = carro;
         }
 
         //Impresão da classe para o usuário
         public override string ToString()
         {
-            return base.ToString();
+            return nomeAcessorio
+                + ", Preço: "
+                + precoMarca.ToString("F2", CultureInfo.InvariantCulture);
         }
     }
-}
+}//OK Classe Pronta

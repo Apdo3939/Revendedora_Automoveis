@@ -45,6 +45,7 @@
     <Compile Include="Classes\Acessorios.cs" />
     <Compile Include="Classes\Carros.cs" />
     <Compile Include="Classes\Marcas.cs" />
+    <Compile Include="Classes\ModelException.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Tela.cs" />
