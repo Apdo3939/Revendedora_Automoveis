@@ -33,7 +33,7 @@ namespace Revendedora_Automoveis.Classes
             double soma = custoBaseCarro;
             for (int i = 0; i < acessorios.Count; i++)
             {
-                soma = acessorios[i].precoMarca;
+                soma = soma + acessorios[i].precoMarca;
             }
             return soma;
         }
@@ -47,11 +47,13 @@ namespace Revendedora_Automoveis.Classes
                 + ", Ano: "
                 + anoCarro
                 + ", Preço Básico: "
-                + custoBaseCarro.ToString("F2", CultureInfo.InvariantCulture);
+                + custoBaseCarro.ToString("F2", CultureInfo.InvariantCulture)
+                + ", Preço Total: "
+                + precoTotal().ToString("F2", CultureInfo.InvariantCulture);
 
             if (acessorios.Count > 0)
             {
-                s = s + "\nAcessórios: ";
+                s = s + "\n" + "\tAcessórios: ";
                 for (int i = 0; i < acessorios.Count; i++)
                 {
                     s = s + "\n" + acessorios[i];

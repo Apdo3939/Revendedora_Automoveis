@@ -20,7 +20,8 @@ namespace Revendedora_Automoveis.Classes
         //Impresão da classe para o usuário
         public override string ToString()
         {
-            return nomeAcessorio
+            return "\t"
+                + nomeAcessorio
                 + ", Preço: "
                 + precoMarca.ToString("F2", CultureInfo.InvariantCulture);
         }

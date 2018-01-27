@@ -1,8 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using Revendedora_Automoveis.Classes;
 
 namespace Revendedora_Automoveis
@@ -86,14 +83,88 @@ namespace Revendedora_Automoveis
                         Console.ReadLine();
                         break;
 
+                    case 3:
+                        try
+                        {
+                            Tela.CadastrarMarca();
+                        }
+                        catch (ModelException e)
+                        {
+                            Console.WriteLine("\tErro de Negócio. " + e.Message);
+                        }
+                        catch (Exception e)
+                        {
+                            Console.WriteLine("\tErro inesperado. " + e.Message);
+                        }
+                        Console.WriteLine();
+                        Console.Write("\tAperte tecla enter para outra opção.");
+                        Console.ReadLine();
+                        break;
+
+                    case 4:
+                        try
+                        {
+                            Tela.CadastrarCarro();
+                        }
+                        catch (ModelException e)
+                        {
+                            Console.WriteLine("\tErro de Negócio. " + e.Message);
+                        }
+                        catch (Exception e)
+                        {
+                            Console.WriteLine("\tErro inesperado. " + e.Message);
+                        }
+                        Console.WriteLine();
+                        Console.Write("\tAperte tecla enter para outra opção.");
+                        Console.ReadLine();
+                        break;
+
+                    case 5:
+                        try
+                        {
+                            Tela.CadastrarAcessorio();
+                        }
+                        catch (ModelException e)
+                        {
+                            Console.WriteLine("\tErro de Negócio. " + e.Message);
+                        }
+                        catch (Exception e)
+                        {
+                            Console.WriteLine("\tErro inesperado. " + e.Message);
+                        }
+                        Console.WriteLine();
+                        Console.Write("\tAperte tecla enter para outra opção.");
+                        Console.ReadLine();
+                        break;
+
+                    case 6:
+                        try
+                        {
+                            Tela.MostrarDetalhesCarro(carros);
+                        }
+                        catch (ModelException e)
+                        {
+                            Console.WriteLine("\tErro de Negócio. " + e.Message);
+                        }
+                        catch (Exception e)
+                        {
+                            Console.WriteLine("\tErro inesperado. " + e.Message);
+                        }
+                        Console.WriteLine();
+                        Console.Write("\tAperte tecla enter para outra opção.");
+                        Console.ReadLine();
+                        break;
+
                     case 7:
                         Console.WriteLine("\tFim do programa!");
                         Console.WriteLine();
+                        Tela.FimPrograma();
                         break;
 
                     default:
                         Console.WriteLine("\tOpção inválida!");
-                        Console.WriteLine();
+                        Console.Write("\tAperte tecla enter para outra opção.");
+                        Console.ReadLine();
                         break;
 
                 }
